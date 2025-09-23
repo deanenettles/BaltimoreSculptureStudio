@@ -19,43 +19,57 @@
 	        }
 	    *, *:before, *:after {
 	        box-sizing: inherit;
+            font-size:20px;
 	        }
         #wrap {
             width:100%; 
             max-width:62.5rem; 
-            padding:2rem;
+            padding:0rem 2rem 2rem 2rem;
             margin:0 auto;
         }
-        #sculpture {
-            
+        .sculpture {
+            display:flex; flex-direction:row; gap:20px; padding:20px; justify-content:left; flex-wrap: wrap;
 
         }
+        figure {width:14rem; height:14rem; background-color:#ddd; margin:0; padding:0;}
+
+        figure img {width:14rem;}
+
         body {  
             font-family: "Roboto Condensed", sans-serif;
             font-optical-sizing: auto;
-            font-weight: 300;
-            font-style: normal;
+            font-weight: 350;
+            font-style: normal; 
             }
         h1, h2, a {
             font-family: "Special Gothic Condensed One", sans-serif;
             font-weight: 400;
             font-style: normal;
             }
-        h1 {font-size:3rem;}
+        h1 {font-size:4rem;}
+        h2 {font-size:2rem;}       
+        h1, h2 {background-color:oklch(0.9 0.06 200); padding:1rem; margin-left:-1rem; margin-right:-1rem;}
+        h3 {margin-bottom:0;}
+        h4 {font-size:1.5rem;margin:0; padding:0;}
         strong {font-weight:500;}
 
         p strong {margin-bottom:0;}
 
-        a {font-size:2rem; color:red; text-decoration:none; margin-top:0;}
+        h4 a {font-size:2rem; color:red; text-decoration:none; margin-top:0;}
+
+        .overall {float:right; background-color:#ddd; width:20rem; margin-left:1rem;}
     </style>
 
 </head>
 <body>
     <div id="wrap">
     <h1>Baltimore Sculpture Studio</h1>
-    <p>We’ve created a space where we can sculpt in clay from live models in Baltimore’s Station North art district. We are a community of community-oriented, dedicated sculptors with a wonderful, light-filled studio with heating and air conditioning. We are looking for sculptors to join us as yearly, half-yearly and quarter-yearly members.</p>
+    <img class="overall" src="images/Overall.png">
+    <p>We are a community of community-oriented, dedicated sculptors with a wonderful, light-filled studio with heating and air conditioning. We’ve created a space where we can sculpt in clay from live models in Baltimore’s Station North art district.</p>
 
-    <p>We have sculpture sessions with live models Sunday from 1-4pm. Full-time members would have 24–7 access to our air-conditioned studio.</p>
+    <p>We have sculpture sessions with live models Sunday from 1-4pm. Full-time members would have 24–7 access to the studio.</p>
+
+    <p><strong>We are looking for sculptors to join us as yearly, half-yearly and quarter-yearly members.</strong></p>
 
     <p>Our vision is to branch out to:</p>
     <ul>
@@ -63,22 +77,47 @@
         <li>Workshops with visiting artists</li>
         <li>Artist talks</li>
     </ul>
-    <p>There is also a gallery in the building so there may be options to participate in gallery shows</p>
-    <p><strong>Join us! Call or text Alison at:</strong></p>
-    <p><a href="tel:443-990-1612">443-990-1612</a></p>
+    <p>There is also a gallery in the building so there may be options to participate in gallery shows.</p>
+    <h4>Join us! Call or text Alison at:</h4>
+    <h4><a href="tel:443-990-1612">443-990-1612</a></h4>
 
-    <h2>Members</h2>
-    <h3>Alison Canon</h3>
-    <h3>Deane Nettles</h3>
+    <h2>Members' Work</h2>
+    <h3>Alison</h3>
     <div class="sculpture">
-        <figure></figure>
-        <figure></figure>
-        <figure></figure>
+        <figure><img src=""></figure>
+        <figure><img src=""></figure>
+        <figure><img src=""></figure>
+    </div>
+    <h3><a href="mailto:deane@deanenettles.com">Deane Nettles</a></h3>
+    <div class="sculpture">
+        <figure><img src="images/DeaneSq.png"></figure>
+        <figure><img src="images/DeaneTighterSq.png"></figure>
+        <figure><img src="images/DeaneIMG_6640Sq.png"></figure>
     </div>
     <h3>Matthew Gemmell</h3>
+    <div class="sculpture">
+        <figure><img src="images/MatthewGemmellSq.png"></figure>
+        <figure><img src="images/MattIMG_6767Sq.png"></figure>
+        <figure><img src="images/MattIMG_6769Sq.png"></figure>
+    </div>    
     <h3>Laura</h3>
+    <div class="sculpture">
+        <figure><img src=""></figure>
+        <figure><img src=""></figure>
+        <figure><img src=""></figure>
+    </div>
     <h3>Alison Bell</h3>
+    <div class="sculpture">
+        <figure><img src=""></figure>
+        <figure><img src=""></figure>
+        <figure><img src=""></figure>
+    </div>
     <h3>Rebecca</h3>
+    <div class="sculpture">
+        <figure><img src=""></figure>
+        <figure><img src=""></figure>
+        <figure><img src=""></figure>
+    </div>
 
     </div><!-- end wrap -->
 </body>
