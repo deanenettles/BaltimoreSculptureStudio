@@ -21,6 +21,7 @@
 	        box-sizing: inherit;
             font-size:20px;
 	        }
+        body {margin:0; padding:0;}
         #wrap {
             width:100%; 
             max-width:62.5rem; 
@@ -28,9 +29,18 @@
             margin:0 auto;
         }
         .sculpture {
-            display:flex; flex-direction:row; gap:20px; padding:20px; justify-content:left; flex-wrap: wrap;
-
+            display:flex; flex-direction:row; gap:20px; padding:20px; justify-content:center; flex-wrap: wrap;
         }
+
+        .fees {
+            display:flex; flex-direction:column; gap:8%; padding:0; justify-content:center; flex-wrap: wrap; width:100%;
+        }
+
+        @media only screen and (min-width: 800px){
+            .fees {flex-direction:row;}
+            .dropin, .member {width:46%;}
+        }
+
         figure {width:14rem; height:14rem; background-color:#ddd; margin:0; padding:0;}
 
         figure img {width:14rem;}
@@ -41,6 +51,11 @@
             font-weight: 350;
             font-style: normal; 
             }
+
+        .work {text-align:center;}
+
+        footer {color:white; background-color:black; padding:20px 20px 40px 20px; margin-top:40px; text-align:center;}
+
         h1, h2, a {
             font-family: "Special Gothic Condensed One", sans-serif;
             font-weight: 400;
@@ -49,9 +64,9 @@
 
         h2 {font-size:1.75rem; clear:both;}       
         h1, h2 {
-            background-color:oklch(0.9 0.06 200);   padding:1rem; 
+            background-color:oklch(0.9 0.06 200); padding:1rem; 
             margin-left:-1rem; margin-right:-1rem;
-            clear:both;
+            clear:both; text-align:center;
         }
         h1 {font-size:2.5rem; line-height:2rem; margin-bottom:1.5rem; padding: 2rem 1rem;}
         h3, h3 a {margin-bottom:0; font-size:1.35rem;}
@@ -67,6 +82,8 @@
 
         .overall {float:none; background-color:#ddd; width:100%; margin-bottom:2rem;}
 
+        img[src="images/zelle_baltsculptstudio.jpg"] {width:100%; max-width:400px; margin:0 auto;}
+
         @media only screen and (min-width: 700px){
             h1 {font-size:3.5rem; line-height:3rem; margin-bottom:1.5rem; padding: 1.5rem 1rem;}
             h2 {font-size:2rem;}
@@ -79,11 +96,11 @@
     <div id="wrap">
     <h1>Baltimore Sculpture Studio</h1>
     <img class="overall" src="images/Overall.png" alt="Model posing in our studio">
-    <p><strong>We are a community of community-oriented, dedicated sculptors</strong> with a wonderful, light-filled studio with heating and air conditioning. We&rsquo;ve created a space where we can sculpt in clay from live models in Baltimore&rsquo;s Station North art district.</p>
+    <p><strong>We are a collective of community-oriented, dedicated sculptors</strong>. We&rsquo;ve created a space where we can sculpt in clay from live models in Baltimore&rsquo;s Station North art district in a wonderful, light-filled studio with heating and air conditioning. </p>
 
     <p><strong>We have sculpture sessions with live models Sunday from 1&#8209;4pm.</strong> Full-time members have 24&#8209;7 access to the studio.</p>
 
-    <p><strong>We are looking for sculptors to join us as yearly, half-yearly and quarter-yearly members.</strong></p>
+    <p><strong>We are looking for sculptors to join us as yearly, half-yearly and quarterly members.</strong></p>
 
     <p>Our vision is to branch out with:</p>
     <ul>
@@ -95,80 +112,94 @@
     <h4>Join us! Call or text Alison Cannon at:</h4>
     <h4><a href="tel:443-990-1612">443&#8209;990&#8209;1612</a></h4>
 
-    <h2>Sunday Studio Sessions</h2>
-    <p><strong>We have sculpture sessions with live models Sunday from 1&#8209;4pm.</strong></p>
-    <p><strong>Drop-in price: $45</strong>, including model fee and use of a stand. Spots are limited; payment secures your spot.</p>
-    <p>You will need to bring your own tools and materials.</p>
-    <h3>To sign up: </h3>
-    <ul>
-    <li>Send $45 per session via Zelle.</li>
-    <li>Send an email to <a href="mailto:BaltimoreSculptureStudio@gmail.com">BaltimoreSculptureStudio@gmail.com</a> with name, phone, dates you plan to attend and copy of Zelle reciept.</li>
-    </ul>
-    <p><img src="images/zelle_deanenettles.jpg"></p>
-    <p>When using this QR code, you will need to go to your bank from the QR code. To make sure you're not being defrauded, make sure it's sending to Baltimore Sculpture Studio LLC.</p>
-    <p><em>If you only sign up for one session, you will need to take your materials and piece home with you; if you sign up for several sequential sessions, we can provide storage between sessions.</em></p>
-
-    <h2>2025–2026 Membership Prices</h2>
-    <p>Includes 24/7 access to studio, Sunday live model sessions including model fees, use of a model stand and storage space, and work posted to our website as well as a link to your personal social media, ability to participate in open studios.</p>
-    <h3>Yearly Membership — $2000*</h3>
-    <h3>Half-Yearly Membership — $1100</h3>
-    <h3>Quarterly Membership — $550</h3>
-    <p class="smaller">*Also includes membership in the studio collective</p>
-    <h3>Call or text Alison Cannon at:</h4>
-    <h4><a href="tel:443-990-1612">443&#8209;990&#8209;1612</a></h4>
-
-
-
-    <h2>Members&rsquo; Work</h2>
-    <h3>Alison Bell</h3>
-    <div class="sculpture">
-        <figure><img src="images/AlisonBellRecliningx900.jpg" alt="Reclining figure"></figure>
-        <figure><img src="images/AlisonBellStanding2x900.jpg" alt="Standing figure"></figure>
-        <figure><img src="images/AlisonBellSittingx900.jpg" alt="Seated figure"></figure>
+    <div class="fees">
+        <div class="dropin">
+            <h2>Sunday Studio Sessions</h2>
+            <p><strong>We have sculpture sessions with live models Sunday from 1&#8209;4pm.</strong></p>
+            <p><strong>Drop-in price: $45</strong>, including model fee and use of a stand. Spots are limited; payment secures your spot.</p>
+            <p>You will need to bring your own tools and materials.</p>
+            <h3>To sign up: </h3>
+            <ul>
+            <li><strong>Send $45 per session via Zelle.</strong></li>
+            <li>Send an email to <a href="mailto:BaltimoreSculptureStudio@gmail.com">BaltimoreSculptureStudio@gmail.com</a> with name, phone, dates you plan to attend and copy of Zelle reciept.</li>
+            </ul>
+            <p><img src="images/zelle_baltsculptstudio.jpg" alt="QR code to send money via Zelle"></p>
+            <p>Try scanning this QR code with your banking app. To make sure you're not being defrauded, make sure Zelle says it's sending to Baltimore Sculpture Studio LLC. Or send your Zelle payment to baltimoresculpturestudio@gmail.com</p>
+            <p><em>If you only sign up for one session, you will need to take your materials and pieces home with you; if you sign up for several sequential sessions, we can provide storage between sessions.</em></p>
+        </div>
+        <div class="member">
+            <h2>2025–2026 Membership</h2>
+            <p>Includes 24/7 access to studio, Sunday live model sessions including model fees, use of a model stand and storage space, and work posted to our website as well as a link to your personal social media, ability to participate in open studios.</p>
+            <h3>Yearly Membership — $2500*</h3>
+            <h3>Half-Yearly Membership — $1350</h3>
+            <h3>Quarterly Membership — $750</h3>
+            <p class="smaller">*Also includes membership in the studio collective</p>
+            <h3>Questions? Call or text Alison Cannon at:</h3>
+            <h4><a href="tel:443-990-1612">443&#8209;990&#8209;1612</a></h4>
+        </div>
     </div>
-    <h3>Alison Cannon</h3>
-    <div class="sculpture">
-        <figure><img src="images/1000014601-v3x900.jpg" alt="sculpture seated figure"></figure>
-        <figure><img src="images/1000002749-v2x900.jpg" alt="Sculpture bust"></figure>
-        <figure><img src="images/1000002750v2x900.jpg" alt="Standing figure"></figure>
+
+    <div class="work">
+        <h2>Some Member Sculptures</h2>
+
+        <h3>Alison Bell</h3>
+        <div class="sculpture">
+            <figure><img src="images/AlisonBellRecliningx900.jpg" alt="Reclining figure"></figure>
+            <figure><img src="images/AlisonBellStanding2x900.jpg" alt="Standing figure"></figure>
+            <figure><img src="images/AlisonBellSittingx900.jpg" alt="Seated figure"></figure>
+        </div>
+
+        <h3>Alison Cannon</h3>
+        <div class="sculpture">
+            <figure><img src="images/1000014601-v3x900.jpg" alt="sculpture seated figure"></figure>
+            <figure><img src="images/1000002749-v2x900.jpg" alt="Sculpture bust"></figure>
+            <figure><img src="images/1000002750v2x900.jpg" alt="Standing figure"></figure>
+        </div>
+
+        <h3><a href="mailto:deane@deanenettles.com">Deane Nettles</a></h3>
+        <p>Deane is a graphic designer/photographer/illustrator/painter who has been working in sculpture for 25 years.</p>
+        <div class="sculpture">
+            <figure>
+                <img src="images/DeaneSq.png" alt="Sculpture of graceful woman's head with patina">
+            </figure>
+            <figure>
+                <img src="images/DeaneFoldedArms.jpg" alt="Sculpture of man's head and torso with arms folded">
+            </figure>
+            <figure>
+                <img src="images/DeaneIMG_6640Sq.png" alt="Sculpture of seated woman">
+            </figure>
+        </div>
+
+        <!-- <h3>Matthew Gemmell</h3>
+        <div class="sculpture">
+            <figure>
+                <img src="images/MatthewGemmellSq.png" alt="Sculpture of seated woman floating in air">
+            </figure>
+            <figure>
+                <img src="images/MattIMG_6767Sq.png" alt="Sculpture of man with arm hooked over head">
+            </figure>
+            <figure>
+                <img src="images/MattIMG_6769Sq.png" alt="Sculpture of young woman head and torso">
+            </figure>
+        </div>
+
+        <h3>Laura</h3>
+        <div class="sculpture">
+            <figure><img src="" alt=""></figure>
+            <figure><img src="" alt=""></figure>
+            <figure><img src="" alt=""></figure>
+        </div> -->
+
+        <!-- <h3>Rebecca Waring</h3>
+        <div class="sculpture">
+            <figure><img src="images/Rebecca-Waringimage_50727937x900.jpg" alt="Bust"></figure>
+            <figure><img src="images/RebeccaWaringimage_123650291x900.jpg" alt="Relief"></figure>
+        </div> -->
     </div>
-    <h3><a href="mailto:deane@deanenettles.com">Deane Nettles</a></h3>
-    <p>Deane is a graphic designer/photographer/illustrator/painter who has been working in sculpture off-and-on for 25 years.</p>
-    <div class="sculpture">
-        <figure>
-            <img src="images/DeaneSq.png" alt="Sculpture of graceful woman's head with patina">
-        </figure>
-        <figure>
-            <img src="images/DeaneTighterSq.png" alt="rough clay sculpture man's head and torso">
-        </figure>
-        <figure>
-            <img src="images/DeaneIMG_6640Sq.png" alt="Sculpture of seated woman">
-        </figure>
-    </div>
-    <!-- <h3>Matthew Gemmell</h3>
-    <div class="sculpture">
-        <figure>
-            <img src="images/MatthewGemmellSq.png" alt="Sculpture of seated woman floating in air">
-        </figure>
-        <figure>
-            <img src="images/MattIMG_6767Sq.png" alt="Sculpture of man with arm hooked over head">
-        </figure>
-        <figure>
-            <img src="images/MattIMG_6769Sq.png" alt="Sculpture of young woman head and torso">
-        </figure>
-    </div>
-    <h3>Laura</h3>
-    <div class="sculpture">
-        <figure><img src="" alt=""></figure>
-        <figure><img src="" alt=""></figure>
-        <figure><img src="" alt=""></figure>
-    </div> -->
-    <!-- <h3>Rebecca Waring</h3>
-    <div class="sculpture">
-        <figure><img src="images/Rebecca-Waringimage_50727937x900.jpg" alt="Bust"></figure>
-        <figure><img src="images/RebeccaWaringimage_123650291x900.jpg" alt="Relief"></figure>
-    </div> -->
 
     </div><!-- end wrap -->
+    <footer>
+        <p>Baltimore Sculpture Studio, LLC • 405 East Oliver Street, Studio 354, Baltimore • 443&#8209;990&#8209;1612</p>
+    </footer>
 </body>
 </html>
