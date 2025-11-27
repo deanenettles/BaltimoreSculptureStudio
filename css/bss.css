@@ -72,11 +72,11 @@
 
         /* LINKS */
 
-        a:link, a:visited {text-decoration:none; color:oklch(0.6 0.06 200)}
+        a:link, a:visited {text-decoration:none; color:oklch(0.6 0.06 200); letter-spacing:.5pt;}
         a:hover, h4 a:focus, h4 a:active {color:orangered;}   
 
         h4 a:link, h4 a:visited {font-size:2rem; color:orangered;  margin-top:0;}
-        h4 a:hover, h4 a:focus, h4 a:active {color:orange;}
+        h4 a:hover, h4 a:focus, h4 a:active {color:oklch(0.6 0.06 200);}
 
         /* IMAGES */
 
