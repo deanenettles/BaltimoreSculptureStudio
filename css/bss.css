@@ -37,6 +37,7 @@
 
         .ltbkgd {background-color:oklch(95.475% 0.01388 202.874); padding:0 1rem 1rem 1rem; margin:1rem 0;}
         .ltbkgd h2 {background-color:orangered; color:white;}
+        .ltbkgd h3{font-style:italic;}
         .ltbkgd h5 {margin-bottom:.5rem;}
 
         @media only screen and (min-width: 800px){
