@@ -35,9 +35,30 @@
             display:flex; flex-direction:column; gap:8%; padding:0; justify-content:center; flex-wrap: wrap; width:100%;
         }
 
+        .fl {float:left; margin-right:20px; padding:0;}
+        .fr {float:right; margin-left:20px;}
+        .clear {clear:both;}
+
+        .ltbkgd {background-color:#e4f1f2; background-color:oklch(95.475% 0.01388 202.874); padding:0 1rem 1rem 1rem; margin:1rem 0;}
+        .ltbkgd h2 {background-color:orangered; color:white;}
+        .ltbkgd h3{font-style:italic;}
+        .ltbkgd h5 {margin-bottom:.5rem;}
+
         @media only screen and (min-width: 800px){
             .fees {flex-direction:row-reverse;}
             .dropin, .member {width:46%;}
+        }
+
+        @media only screen and (max-width: 800px){
+            .min {clear:both;}
+        }
+
+        /* CLEARFIX */
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
         }
         /* TYPOGRAPHY */
 
