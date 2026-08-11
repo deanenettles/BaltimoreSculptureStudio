@@ -91,9 +91,11 @@
 
         .noSessions {background-color:#ddd; padding:5px 20px;}
 
+        .red {color:orangered;}
+
         /* LINKS */
 
-        a:link, a:visited {text-decoration:none; color:oklch(0.6 0.06 200); letter-spacing:.5pt;}
+        a:link, a:visited {text-decoration:none; color:oklch(0.6 0.06 200); letter-spacing:.5pt;font-size:1.2rem;}
         a:hover, h4 a:focus, h4 a:active {color:orangered;}   
 
         h4 a:link, h4 a:visited {font-size:2rem; color:orangered;  margin-top:0;}
