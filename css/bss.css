@@ -75,6 +75,7 @@
             clear:both; text-align:center;
         }
         h1 {font-size:2.5rem; line-height:2rem; margin-bottom:1.5rem; padding: 2rem 1rem;}
+        h2 {letter-spacing:1px;}
         h3, h3 a {margin-bottom:0; font-size:1.35rem;}
         h4 {font-size:1.5rem;margin:0; padding:0;}
 
@@ -95,10 +96,11 @@
 
         /* LINKS */
 
-        a:link, a:visited {text-decoration:none; color:oklch(0.6 0.06 200); letter-spacing:.5pt;font-size:1.2rem;}
-        a:hover, h4 a:focus, h4 a:active {color:orangered;}   
+        a:link, a:visited {text-decoration:none; color:oklch(0.6 0.06 200); letter-spacing:.8px; font-size:1.4rem;}
 
-        h4 a:link, h4 a:visited {font-size:2rem; color:orangered;  margin-top:0;}
+        a:hover, h4 a:focus, h4 a:active {color:orangered;}
+
+        h4 a:link, h4 a:visited {color:orangered;  margin-top:0;}
         h4 a:hover, h4 a:focus, h4 a:active {color:oklch(0.6 0.06 200);}
 
         /* IMAGES */
